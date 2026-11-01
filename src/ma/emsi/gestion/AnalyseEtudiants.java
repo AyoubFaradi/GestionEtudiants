@@ -128,9 +128,7 @@ public class AnalyseEtudiants {
     public static List<Etudiant> fusionnerGroupes(
             List<Etudiant> etudiants) {
 
-        List<Etudiant> groupe1 =
-                etudiants.subList(0, Math.min(3, etudiants.size()));
-
+        List<Etudiant> groupe1 =etudiants.subList(0, Math.min(3, etudiants.size()));
         List<Etudiant> groupe2 =etudiants.subList(groupe1.size(),etudiants.size());
         return java.util.stream.Stream.of(groupe1, groupe2).flatMap(List::stream).toList();
     }
