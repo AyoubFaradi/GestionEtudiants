@@ -1,0 +1,19 @@
+
+# Fichiers compiles
+out/
+target/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Fichiers Java compiles
+*.class
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
